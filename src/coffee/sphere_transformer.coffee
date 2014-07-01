@@ -1,5 +1,4 @@
 Q = require 'q'
-csv = require 'csv'
 
 _ = require('underscore')._
 _s = require 'underscore.string'
