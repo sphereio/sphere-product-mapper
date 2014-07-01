@@ -2,7 +2,7 @@ Q = require 'q'
 fs = require 'q-io/fs'
 _ = require('underscore')._
 
-{defaultTransformers} = require('../main').transformer
+{defaultTransformers} = require('csv-mapper').transformer
 {SphereSequenceTransformer, RepeatOnDuplicateSkuTransformer, SphereService, DuplicateSku} = require('../main').sphere_transformer
 
 describe 'Sphere transformers', ->

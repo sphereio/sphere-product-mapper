@@ -20,7 +20,7 @@
       "url": "https://github.com/sphereio/sphere-product-mapper/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "lib/sphere-product-mapper",
+  "main": "main",
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -36,10 +36,9 @@
     "underscore.string": "2.3.3",
     "q": "~1.0.0",
     "q-io": "~1.10.9",
-    "csv": "0.3.7",
     "sphere-node-connect": "0.3.0",
     "sphere-node-utils": "0.3.3",
-    "rx": "2.2.27"
+    "csv-mapper": "1.0.4"
   },
   "devDependencies": {
     "coveralls": "2.10.1",

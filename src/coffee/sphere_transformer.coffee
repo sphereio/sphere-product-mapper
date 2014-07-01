@@ -4,11 +4,8 @@ csv = require 'csv'
 _ = require('underscore')._
 _s = require 'underscore.string'
 
-util = require '../lib/util'
-
+{util, BatchTaskQueue, Repeater} = require 'csv-mapper'
 {Rest} = require('sphere-node-connect')
-{Repeater} = require('../lib/repeater')
-{BatchTaskQueue} = require('../lib/task_queue')
 
 class SphereSequenceTransformer extends transformer.ValueTransformer
   @create: (transformers, options) ->

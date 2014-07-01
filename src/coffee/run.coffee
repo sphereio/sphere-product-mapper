@@ -1,9 +1,10 @@
 Q = require 'q'
 {_} = require 'underscore'
 
-util = require '../lib/util'
-package_json = require '../package.json'
+{util, transformer, mapping, Mapper} = require 'csv-mapper'
 {ProjectCredentialsConfig} = require 'sphere-node-utils'
+
+package_json = require '../package.json'
 
 optimist = require('optimist')
 .usage('Usage: $0 --mapping [mapping.json]')
@@ -34,10 +35,7 @@ optimist = require('optimist')
 .default('attemptsOnConflict', 10)
 .demand(['mapping'])
 
-Mapper = require('../main').Mapper
-transformer = require('../main').transformer
 sphere_transformer = require('../main').sphere_transformer
-mapping = require('../main').mapping
 
 argv = optimist.argv
 startTime = new Date().getTime()

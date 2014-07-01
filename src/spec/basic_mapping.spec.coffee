@@ -3,11 +3,7 @@ fs = require 'q-io/fs'
 {_} = require('underscore')
 _s = require 'underscore.string'
 
-util = require '../lib/util'
-mapping = require('../main').mapping
-transformer = require('../main').transformer
-
-Mapper = require('../main').Mapper
+{util, mapping, transformer, Mapper} = require 'csv-mapper'
 
 describe 'Mapping', ->
   createTestMapper = (testDir, mappingFile, mapperOptions) ->
