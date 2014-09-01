@@ -47,6 +47,8 @@ sudo npm install . -g
       --inCsv               The input product CSV file (optional, STDIN would be used if not specified).
       --outCsv              The output product CSV file (optional, STDOUT would be used if not specified).
       --csvDelimiter        CSV delimiter (by default ,).
+      --inCsvDelimiter      CSV delimiter in input file (by default csvDelimiter is used).
+      --outCsvDelimiter     CSV delimiter in output files (by default csvDelimiter is used).
       --csvQuote            CSV quote (by default ").
       --mapping, -m         Mapping JSON file or URL.                                                                        [required]
       --group               The column group that should be used.                                                            [string]  [default: "default"]
